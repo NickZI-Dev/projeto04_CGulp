@@ -1,0 +1,27 @@
+{
+  "name": "projeto04_cgulp",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "gulp",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NickZI-Dev/projeto04_CGulp.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NickZI-Dev/projeto04_CGulp/issues"
+  },
+  "homepage": "https://github.com/NickZI-Dev/projeto04_CGulp#readme",
+  "description": "",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-imagemin": "^7.0.0",
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.87.0"
+  }
+}
