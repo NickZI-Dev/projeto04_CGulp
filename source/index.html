@@ -1,17 +1,184 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Projeto04_CGulp</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../dist/css/base.css">
 </head>
-<body>
-  <div class="hero">
-    
-  </div>
 
+<body>
+  <header class="header">
+    <h1 class="header__logo">
+      Souls+
+    </h1>
+    <nav>
+      <ul class="mb-0 header__content">
+        <li class="header__item">
+          <a href="" class="header__item__link">Assine agora</a>
+        </li>
+        <li class="header__item">
+          <a href="" class="header__item__link">Entrar</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <div class="hero">
+      <div class="hero__content">
+        <h2 class="hero__content__branding">
+          <img src="./images/rambo-last-blood-logo.png.png" alt="">
+        </h2>
+        <h3 class="title--small">
+          "O ator de 72 anos volta pela quinta vez ao papel do soldado das Forças Especiais do Exército americano e veterano da Guerra do Vietnã John Rambo."
+        </h3>
+        <ul class="hero__content__genre">
+          <li class="content__item">
+            <a href="" class="content__item__link">Ação</a>
+          </li>
+          <li class="content__item">
+            <a href="" class="content__item__link">Suspense</a>
+          </li>
+          <li class="content__item">
+            <a href="" class="content__item__link">Drama</a>
+          </li>
+          <li class="content__item">
+            <a href="" class="content__item__link">Ficção Policial</a>
+          </li>
+        </ul>
+        <button type="button" class="hero__content__button">
+          Assista agora
+        </button>
+        <button type="button" class="hero__content__button">
+          <i class="bi bi-bookmark-plus pe-1"></i>Lista de interesse
+        </button>
+        <p>
+          <a href="" class="text--link d-block mt-3 mb-1">Assinar o Souls+</a>
+          <span class="text">R$ 27,90/mês ou R$ 279,90/ano à vista*</span>
+        </p>
+      </div>
+      <div class="hero__painel">
+        <img src="../dist/images/rambo-last-blood.png" alt="Stallone Rambo - Até o fim">
+      </div>
+    </div>
+
+    <div class="show-movies">
+      <nav class="show-movies__tab">
+        <button data-tab-button="movies" type="menu" class="show-movies__tab__button show-movies__tab__button--is-active">Relacionados</button>
+        <button data-tab-button="details" type="menu" class="show-movies__tab__button">Detalhes</button>
+      </nav>
+      <ul class="show-movies__list show-movies__list--is-active" data-tab-id="movies">
+        <li class="show-movies__list__item">
+          <a href="">
+            <img src="../dist/images/filme_celular.png" alt="Celular" class="rounded">
+          </a>
+        </li>
+        <li class="show-movies__list__item">
+          <a href="">
+            <img src="../dist/images/filme_celular.png" alt="Celular" class="rounded">
+          </a>
+        </li>
+        <li class="show-movies__list__item">
+          <a href="">
+            <img src="../dist/images/filme_celular.png" alt="Celular" class="rounded">
+          </a>
+        </li>
+        <li class="show-movies__list__item">
+          <a href="">
+            <img src="../dist/images/filme_celular.png" alt="Celular" class="rounded">
+          </a>
+        </li>
+      </ul>
+      <div class="show-movies__details" data-tab-id="details">
+        <div class="show-movies__details__info">
+          <h3 class="title">Legendas</h3>
+          <p class="text--big">Sem legendas</p>
+        </div>
+        <div class="show-movies__details__info">
+          <h3 class="title">Diretores</h3>
+          <p class="text--big">Adrian Grunberg</p>
+        </div>
+        <div class="show-movies__details__info">
+          <h3 class="title">Produtores</h3>
+          <p class="text--big">Avi Lerner, Kevin King Templeton, Yariv Lerner, Les Weldon</p>
+        </div>
+        <div class="show-movies__details__info">
+          <h3 class="title">Elenco</h3>
+          <p class="text--big">Sylvester Stallone, Paz Vega, Sergio Peris-Mencheta, Adriana Barraza, Yvette Monreal, Genie Kim, Joaquín Cosio, Pascacio López, Óscar Jaenada, Alexander Dimitrov, Aaron Cohen, Nick Wittman, Jessica Madsen, Louis Mandylor, Owen Davis</p>
+        </div>
+        <div class="show-movies__details__info">
+          <h3 class="title">Estúdio</h3>
+          <p class="text--big">Lions Gate Entertainment Corporation</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="movies-previous">
+      <div class="container">
+        <h3 class="movies-previous__span">Filmes anteriores</h3>
+      </div>
+      <ul class="movies-previous__list">
+        <li class="movies-previous__list__item">
+          <a href=""><img src="./images/rambo-first-blood.png" alt=""></a>
+        </li>
+        <li class="movies-previous__list__item">
+          <a href=""><img src="./images/rambo-first-blood-partII.png" alt=""></a>
+        </li>
+        <li class="movies-previous__list__item">
+          <a href=""><img src="./images/rambo-III.png" alt=""></a>
+        </li>
+        <li class="movies-previous__list__item">
+          <a href=""><img src="./images/rambo-IV.png" alt=""></a>
+        </li>
+      </ul>
+    </div>
+
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <h1 class="title--small">Souls+</h1>
+      <ul class="footer__items">
+        <li class="footer__items__link">
+          <div class="language-selector">
+            <img src="../dist/images/globe-grid-svgrepo-com.svg" alt="">
+            <select>
+              <option>English</option>
+              <option selected>Português</option>
+            </select>
+          </div>
+        </li>
+        <li class="footer__items__link">
+          <a href="#" class="text--small">Termos e Condições de Uso</a>
+        </li>
+        <li class="footer__items__link">
+          <a href="#" class="text--small">Política de privacidade</a>
+        </li>
+        <li class="footer__items__link">
+          <a href="#" class="text--small">Proteção de Dados no Brasil</a>
+        </li>
+        <li class="footer__items__link">
+          <a href="#" class="text--small">Ajuda</a>
+        </li>
+        <li class="footer__items__link">
+          <a href="#" class="text--small">Sobre o Souls+</a>
+        </li>
+      </ul>
+      <p class="text--small">
+       &copy; 2022 Souls+, Todos os direitos reservados a Nícolas Iesus, Serviço de assinatura paga. Conteúdo sujeito a disponibilidade
+      </p>
+      <p class="text--small">
+        Souls+ é um serviço pago, baseado em assinatura e sujeito a termos e condições. O serviço Souls+ é comercializado por Nícolas Iesus
+      </p>
+    </div>
+  </footer>
 
   <script src="./scripts/main.js"></script>
 </body>
+
 </html>
