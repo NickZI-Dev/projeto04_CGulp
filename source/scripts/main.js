@@ -1,7 +1,30 @@
 document.addEventListener('DOMContentLoaded', function() {
   const buttons = document.querySelectorAll('[data-tab-button]');
+
+  const heroSection = document.querySelector('.hero');
+  const heroHeight = heroSection.clientHeight;
+
+  window.addEventListener('scroll', function() {
+    const actuallyPosition = window.scrollY;
+    if(actuallyPosition < heroHeight) {
+      ocultarElementos();
+    } else {
+      exibirElementos();
+    }
+  })
+
+ function ocultarElementos() {
+    const header = document.querySelector('.header');
+    header.classList.add('header--is-hidden');
+  }
+
+  function exibirElementos() {
+    const header = document.querySelector('.header');
+    header.classList.remove('header--is-hidden');
+  }
   
-  
+  // funcionalidade aos botões "Relacionados" e "Detalhes"
+
   for (let i = 0; i < buttons.length; i++) {
     buttons[i].addEventListener('click', function(botao){
       const abaAlvo = botao.target.dataset.tabButton;
