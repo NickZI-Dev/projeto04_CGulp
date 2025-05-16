@@ -203,6 +203,12 @@
     margin-left: 0px;
     margin-bottom: 80px;
 
+    &__list {
+      &__item {
+        margin-bottom: 8px;
+      }
+    }
+
     &__tab {
       padding-left: 20px;
 
@@ -305,5 +311,23 @@
         background-color: #000;
       }
     }
+  }
+  .show-movies__details__info {
+    .title {
+      font-size: 28px;
+    }
+    .text--big {
+      font-size: 14px;
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .show-movies {
+    max-width: 900px;
+    padding: 20px 0;
+  }
+  .movies-previous {
+    padding: 180px 0;
   }
 }
