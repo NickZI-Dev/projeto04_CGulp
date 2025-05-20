@@ -293,7 +293,7 @@
     align-items: center;
     justify-content: center;
     margin: 12px 0;
-    
+
     img {
       height: 18px;
     }
@@ -325,9 +325,65 @@
 @media (min-width: 768px) and (max-width: 1024px) {
   .show-movies {
     max-width: 900px;
-    padding: 20px 0;
+    padding: 20px;
+    margin: 0 0 80px;
   }
   .movies-previous {
-    padding: 180px 0;
+    &__span {
+      max-width: 100%;
+      text-align: center;
+      border-bottom: 4px solid #fff;
+      border-top: 4px solid #fff;
+      color: #fff;
+      padding: 24px 0;
+      border-radius: 8px;
+      font-size: 24px;
+      font-family: "BungeeShade", sans-serif;
+      margin: 0;
+    }
+
+    &__list {
+      padding: 0px;
+      display: block;
+      justify-content: center;
+      justify-self: center;
+      margin: 28px 0px;
+      width: 300px;
+
+      &__item {
+        list-style: none;
+        margin-bottom: 12px;
+
+        img {
+          border-radius: 6px;
+          max-width: 300px;
+          height: 444px;
+        }
+      }
+    }
+  }
+  .language-selector {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 12px 0;
+
+    img {
+      height: 18px;
+    }
+    select {
+      background-color: transparent;
+      border: none;
+      color: theme.$bgColorTextPrimary;
+      font-size: 12px;
+      &:hover {
+        color: theme.$bgColorText;
+        text-decoration: underline;
+      }
+
+      option {
+        background-color: #000;
+      }
+    }
   }
 }
