@@ -123,6 +123,13 @@
     &--is-active {
       display: flex;
     }
+
+    &__item {
+      img {
+        width: 300px;
+        height: 169px;
+      }
+    }
   }
 
   &__details {
@@ -205,7 +212,7 @@
 
     &__list {
       &__item {
-        margin-bottom: 8px;
+        margin-bottom: 28px;
       }
     }
 
@@ -327,6 +334,14 @@
     max-width: 900px;
     padding: 20px;
     margin: 0 0 80px;
+    &__list {
+      &__item {
+        img {
+          height: 112px;
+          width: 200px;
+        }
+      }
+    }
   }
   .movies-previous {
     &__span {
