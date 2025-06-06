@@ -54,7 +54,10 @@
 .hero {
   &__content {
     .hero__buttons {
+      display: flex;
+      justify-content: center;
       &__item {
+        font-size: 12px;
         padding: 16px;
         text-transform: uppercase;
         margin-right: 14px;
